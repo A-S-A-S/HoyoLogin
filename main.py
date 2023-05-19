@@ -7,6 +7,9 @@ with open('tokens.json') as file:
 GI_URL = "https://sg-hk4e-api.hoyolab.com/event/sol/sign?act_id=e202102251931481"
 HSR_URL = "https://sg-public-api.hoyolab.com/event/luna/os/sign?act_id=e202303301540311"
 
+# Create a session for HTTP requests
+session = requests.Session()
+
 # Debug function to test access
 def getAccountInfo(cookies):
     headers = {
@@ -16,7 +19,7 @@ def getAccountInfo(cookies):
     }
 
     try:
-        response = requests.get("https://api-account-os.hoyolab.com/auth/api/getUserAccountInfoByLToken", headers=headers, cookies=cookies)
+        response = session.get("https://api-account-os.hoyolab.com/auth/api/getUserAccountInfoByLToken", headers=headers, cookies=cookies)
         return response.json()
     except requests.exceptions.RequestException as e:
         return str(e)
@@ -31,7 +34,7 @@ def claimReward(cookies, URI):
     }
 
     try:
-        response = requests.post(URI, headers=headers, cookies=cookies)
+        response = session.post(URI, headers=headers, cookies=cookies)
         return response.json()
     except requests.exceptions.RequestException as e:
         return str(e)

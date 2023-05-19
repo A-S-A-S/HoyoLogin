@@ -1,6 +1,6 @@
 # HoyoLogin
 
-HoyoLogin is a straightforward Python script for claiming rewards from Hoyoverse games. You don't need to have excessive dependencies, read lines of spaghetti code to find if there is some sneaky shit hidden or over-engineering pseudo "user-friendly" way to interact.
+HoyoLogin is a straightforward Python script for claiming rewards from Hoyoverse games. It aims to provide a simple and efficient solution without excessive dependencies, convoluted code, or over-engineered user interactions.
 
 ## Requirements
 
@@ -25,4 +25,4 @@ HoyoLogin is a straightforward Python script for claiming rewards from Hoyoverse
    - Update the first line to specify the directory of the HoyoLogin project.
    - Update the second line to provide the full path to the Python interpreter and `main.py`.
 7. (Optional) If you want to schedule the task, adjust the properties inside the `schedule_task.ps1` file according to your preferences.
-
+8. (Optional) If you want to add Honkai Imact 3rd logic is the same. Just find current valid URI

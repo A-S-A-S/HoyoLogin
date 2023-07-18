@@ -39,6 +39,6 @@ Run login.bat to see the actual error message
 
 If the script stopped working, try renewing the cookie by repeating the steps to retrieve the cookie value from the browser console.
 
-### Only one user recived rewards
+### Only one user received a reward
 
 Ensure that the cookies for each user are different. To do this, you can try using another browser or opening the browser in incognito mode.

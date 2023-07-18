@@ -1,8 +1,10 @@
 import json
 import requests
+import os
 
 # Constants
-with open('tokens.json') as file:
+tokens_file_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'tokens.json')
+with open(tokens_file_path) as file:
     USERS_COOKIES = json.load(file)
 GI_URL = "https://sg-hk4e-api.hoyolab.com/event/sol/sign?act_id=e202102251931481"
 HSR_URL = "https://sg-public-api.hoyolab.com/event/luna/os/sign?act_id=e202303301540311"

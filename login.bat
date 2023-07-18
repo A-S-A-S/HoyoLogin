@@ -1,3 +1,4 @@
-cd "C:\HoyoLogin"
-"C:\Program Files\Python310\python.exe" C:\HoyoLogin\main.py
+@echo off
+cd /d "C:\Users\Se\Stuff\HoyoLogin"
+python main.py
 pause
